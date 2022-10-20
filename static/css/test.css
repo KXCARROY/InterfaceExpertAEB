@@ -10,7 +10,6 @@
     font-size: 20px;
     font-weight: bold;
     border-radius: 10px;
-  
   }
   
   .active {
@@ -42,7 +41,6 @@
     background-color: rgba(201,175,137, 0.5);
     z-index: -1;
     margin: 5px;
-  
   }
   
   .lien{
@@ -50,12 +48,10 @@
     height: auto;
     position: absolute;
     color: black;
-    
   }
   
   .lien:hover{
     background-color: #c73642;
-    
   }
   
   
@@ -65,7 +61,6 @@
   
   li{
     margin-top: 10px;
-  
     width: 100%;
     margin-left: -15px;
   }

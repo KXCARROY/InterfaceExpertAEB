@@ -11,6 +11,7 @@
     margin: 0 auto 2rem;
     border-radius: 100%
    }
+   
   p.center {
     background: #394264;
     color:#c9af89;
@@ -26,9 +27,7 @@
     padding: 15% 0 0;
   }
       
-      
   .portion-block {
-    
       border-radius: 100%;
       clip: rect(0px, 200px, 200px, 100px);
       height: 100%;
@@ -36,8 +35,8 @@
       width: 100%;
       ;
     }
+
   .circle {
-      
       border-radius: 100%;
       clip: rect(0px, 100px, 200px, 0px);
       height: 100%;
@@ -45,17 +44,10 @@
       width: 100%;
       font-family: monospace;
       font-size: 1.5rem;
-    
     }
       
-
-
-
-
-
 /* 1 AOUT */
 
-      
   #part1Aout {
       transform: rotate(0deg);
     }
@@ -64,7 +56,6 @@
           background-color: #E64C65;
           animation: first 1s 1 forwards;
         }
-      
       
   #part2Aout {
       transform: rotate(180deg);
@@ -78,6 +69,7 @@
   #part3Aout {
       transform: rotate(0deg);
   }
+
       #part3Aout .circle {
           background-color: #4ff681;
           animation: third 1s 1 forwards 0s;
@@ -100,9 +92,6 @@
       to {transform: rotate(0deg);}
   }
 
-
-
-
 /* BASE */
 
   #partB1 {
@@ -114,10 +103,10 @@
         animation: Base1 1s 1 forwards;
       }
     
-    
 #partB2 {
     transform: rotate(120deg);
   }
+
 #partB2 .circle {
     background-color: #11A8AB;
     animation: Base2 1s 1 forwards 0s;
@@ -126,6 +115,7 @@
 #partB3 {
     transform: rotate(240deg);
 }
+
     #partB3 .circle {
         background-color: #4ff681;
         animation: Base3 1s 1 forwards 0s;
@@ -164,6 +154,7 @@
 #part2Sep {
   transform: rotate(180deg);
 }
+
 #part2Sep .circle {
   /* background-color: #11A8AB; */
   background-color: #E64C65;
@@ -173,6 +164,7 @@
 #part3Sep {
   transform: rotate(262deg);
 }
+
   #part3Sep .circle {
       background-color: #11A8AB;
       animation: Sep3 1s 1 forwards 2s;

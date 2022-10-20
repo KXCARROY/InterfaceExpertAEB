@@ -42,20 +42,17 @@
   background-color: rgba(201,175,137, 0.5);
   z-index: -1;
   margin: 5px;
-
 }
 
 .lien{
   width: 94%;
   height: auto;
   position: absolute;
-  color: black;
-  
+  color: black; 
 }
 
 .lien:hover{
   background-color: #c73642;
-  
 }
 
 
@@ -65,7 +62,6 @@ ul{
 
 li{
   margin-top: 10px;
-
   width: 100%;
   margin-left: -15px;
 }

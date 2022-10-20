@@ -22,35 +22,35 @@
     transform: skewX(-15deg);
 }
 
-.cta:focus {
-   outline: none; 
-}
+    .cta:focus {
+        outline: none; 
+    }
 
-.cta:hover {
-    transition: 0.5s;
-    box-shadow: 10px 10px 0 #c9af89;
-}
+        .cta:hover {
+            transition: 0.5s;
+            box-shadow: 10px 10px 0 #c9af89;
+        }
 
 .cta span:nth-child(2) {
     transition: 0.5s;
     margin-right: 0px;
 }
 
-.cta:hover  span:nth-child(2) {
-    transition: 0.5s;
-    margin-right: 45px;
-}
+    .cta:hover  span:nth-child(2) {
+        transition: 0.5s;
+        margin-right: 45px;
+    }
 
-  span {
-    transform: skewX(15deg) 
-  }
+    span {
+        transform: skewX(15deg) 
+    }
 
-  span:nth-child(2) {
-    width: 20px;
-    margin-left: 30px;
-    position: relative;
-    top: 12%;
-  }
+    span:nth-child(2) {
+        width: 20px;
+        margin-left: 30px;
+        position: relative;
+        top: 12%;
+    }
   
 /**************SVG****************/
 

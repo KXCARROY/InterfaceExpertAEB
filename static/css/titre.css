@@ -3,6 +3,7 @@
   margin: 0 auto;
   padding: 0 20px 0;
 }
+
 p {
   text-transform: uppercase;
   color: #222;
@@ -10,12 +11,14 @@ p {
   color: transparent;
   font-size: 0px;
 }
+
 p span {
   display: inline-block;
   position: relative;
   overflow: hidden;
   font-size: clamp(20px, 8vw, 80px);
 }
+
 p span::after {
   content: "";
   display: block;
@@ -26,13 +29,16 @@ p span::after {
   left: 0;
   transform: translateX(-100%);
 }
+
 p:nth-child(1) {
   font-weight: 300;
   animation: txt-appearance 0s 1s forwards;
 }
+
 p:nth-child(2) {
   animation: txt-appearance 0s 1.25s forwards;
 }
+
 p:nth-child(1) span::after {
   background: #E64C65;;
   animation: slide-in 0.75s ease-out forwards,
@@ -45,11 +51,13 @@ p:nth-child(1) span::after {
       transform: translateX(0%);
   }
 }
+
 @keyframes slide-out {
   100% {
       transform: translateX(100%)
   }
 }
+
 @keyframes txt-appearance {
   100% {
       color: #222;

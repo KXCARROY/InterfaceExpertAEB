@@ -10,8 +10,14 @@
 <link rel = "stylesheet" type="text/css" href="{% static 'css/image.css' %}"/>
 <link rel = "stylesheet" type="text/css" href="{% static 'css/logo.css' %}"/>
 
-{% comment %} * Si l'utilisateur est connecté * {% endcomment %}
-{%if user.is_authenticated %}
+<center>
+  <div class="box">
+    <div class="contentes">
+      <img class="imgLogo" src = "{% static 'images/logoBeigeHorizontal.png' %}"/> 
+    </div>
+  </div>
+  <h1>Systeme d'authentification AEB</h1>
+</center> 
 
 <center>
     <h2> Bonjour <strong>{{firstname}}<strong> bienvenue sur votre espace client Assistance Expertise Batiment</h2> <br>
@@ -67,69 +73,4 @@
   </a>
 </div>
       
-<br><br><br>
-
-{% comment %} * Bouton de déconnexion * {% endcomment %}
-  <section align="left" class="portfolio-experiment">
-    <a href="/logout">
-      <span class="text">Se déconnecter</span>
-      <span class="line -right"></span>
-     <span class="line -top"></span>
-     <span class="line -left"></span>
-     <span class="line -bottom"></span>
-   </a>
-  </section>
-    
-{% comment %} * Si l'utilisateur n'est pas connecté * {% endcomment %}
-{% else %}
-<br>
-
-{% comment %} * Page de choix connection / register * {% endcomment %}
-<center>
-  <div class="box">
-    <div class="contentes">
-      <img class="imgLogo" src = "{% static 'images/logoBeigeHorizontal.png' %}"/> 
-    </div>
-  </div>
-  <h1>Systeme d'authentification AEB</h1>
-</center>
-
-
-<div class="div" >
-{% comment %} * Bouton register * {% endcomment %}
-  <div class="flex-1">
-    <button class="button button-mat btn--5">
-      <a href="/register">
-        <div class="psuedo-text">S'enregister</div>
-      </a>
-    </button>
-  </div>
-
-{% comment %} * Bouton Login * {% endcomment %}
-  <div class="flex-1">
-    <button class="button button-mat btn--6">
-      <a href="/login">
-        <div class="psuedo-text">Se connecter</div>
-      </a>
-    </button>
-  </div>
-</div>
-
-{% comment %} ? message de déconnexion ? {% endcomment %}
-<center> 
-  {% for message in messages %}
-  <strong>{{message}}<strong><br>
-  {% endfor %}
-<center>
-
-{% comment %} ! Bouton de test pour modification ! {% endcomment %}
-<center>
-  <button >
-    <a href="/test">
-      <div>Test</div>
-    </a>
-  </button>
-</center
-     
-{% endif %}
 {% endblock %}

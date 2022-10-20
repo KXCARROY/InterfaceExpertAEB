@@ -7,6 +7,10 @@ Pour activer l’environnement, exécutez
 
 project-name\Scripts\activate.bat
 
+Télécharger Django
+
+python -m pip install Django
+
 Puis pour lancer le serveur virtuel 
 
 python manage.py runserver

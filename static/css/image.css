@@ -1,0 +1,22 @@
+.imgMois {
+    width : 285px;
+    height : auto;
+ }
+
+.imgTitre {
+    width : 40%;
+    height : auto;
+}
+
+.imgBouton {
+    width : 25px;
+    height : 50px;
+    border: 2px solid black;
+}
+
+.imgLogo {
+    width : 500px;
+    height : 50%;
+    display: flex;     
+}
+

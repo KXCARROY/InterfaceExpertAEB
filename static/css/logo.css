@@ -1,0 +1,43 @@
+.box
+{
+  width : 500px;
+  height : 50%;
+  padding: 2px;
+  background-color: #c73642; /* gold */
+  /* Single pixel data uri image http://jsfiddle.net/LPxrT/ 
+  /* background-image: gold, gold, white */
+  background-image: 
+  url('data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAK8AAADECAYAAADpoXHsAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAAEnQAABJ0Ad5mH3gAAAIJSURBVHhe7dJBDQAgDAAxVCFg5pE1dFzSRx30vDsLRfKSJS9Z8pIlL1nykiUvWfKSJS9Z8pIlL1nykiUvWfKSJS9Z8pIlL1nykiUvWfKSJS9Z8pIlL1nykiUvWfKSJS9Z8pIlL1nykiUvWfKSJS9Z8pIlL1nykiUvWfKSJS9Z8pIlL1nykiUvWfKSJS9Z8pIlL1nykiUvWfKSJS9Z8pIlL1nykiUvWfKSJS9Z8pIlL1nykiUvWfKSJS9Z8pIlL1nykiUvWfKSJS9Z8pIlL1nykiUvWfKSJS9Z8pIlL1nykiUvWfKSJS9Z8pIlL1nykiUvWfKSJS9Z8pIlL1nykiUvWfKSJS9Z8pIlL1nykiUvWfKSJS9Z8pIlL1nykiUvWfKSJS9Z8pIlL1nykiUvWfKSJS9Z8pIlL1nykiUvWfKSJS9Z8pIlL1nykiUvWfKSJS9Z8pIlL1nykiUvWfKSJS9Z8pIlL1nykiUvWfKSJS9Z8pIlL1nykiUvWfKSJS9Z8pIlL1nykiUvWfKSJS9Z8pIlL1nykiUvWfKSJS9Z8pIlL1nykiUvWfKSJS9Z8pIlL1nykiUvWfKSJS9Z8pIlL1nykiUvWfKSJS9Z8pIlL1nykiUvWfKSJS9Z8pIlL1nykiUvWfKSJS9Z8pIlL1nykiUvWfKSJS9Z8pIlL1nykiUvWfKSJS9Z8hI1+wHCC3ydil6+PAAAAABJRU5ErkJggg=='),  
+  url('data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAK8AAADECAYAAADpoXHsAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAAEnQAABJ0Ad5mH3gAAAIJSURBVHhe7dJBDQAgDAAxVCFg5pE1dFzSRx30vDsLRfKSJS9Z8pIlL1nykiUvWfKSJS9Z8pIlL1nykiUvWfKSJS9Z8pIlL1nykiUvWfKSJS9Z8pIlL1nykiUvWfKSJS9Z8pIlL1nykiUvWfKSJS9Z8pIlL1nykiUvWfKSJS9Z8pIlL1nykiUvWfKSJS9Z8pIlL1nykiUvWfKSJS9Z8pIlL1nykiUvWfKSJS9Z8pIlL1nykiUvWfKSJS9Z8pIlL1nykiUvWfKSJS9Z8pIlL1nykiUvWfKSJS9Z8pIlL1nykiUvWfKSJS9Z8pIlL1nykiUvWfKSJS9Z8pIlL1nykiUvWfKSJS9Z8pIlL1nykiUvWfKSJS9Z8pIlL1nykiUvWfKSJS9Z8pIlL1nykiUvWfKSJS9Z8pIlL1nykiUvWfKSJS9Z8pIlL1nykiUvWfKSJS9Z8pIlL1nykiUvWfKSJS9Z8pIlL1nykiUvWfKSJS9Z8pIlL1nykiUvWfKSJS9Z8pIlL1nykiUvWfKSJS9Z8pIlL1nykiUvWfKSJS9Z8pIlL1nykiUvWfKSJS9Z8pIlL1nykiUvWfKSJS9Z8pIlL1nykiUvWfKSJS9Z8pIlL1nykiUvWfKSJS9Z8pIlL1nykiUvWfKSJS9Z8pIlL1nykiUvWfKSJS9Z8pIlL1nykiUvWfKSJS9Z8hI1+wHCC3ydil6+PAAAAABJRU5ErkJggg=='),
+  url('data:image/gif;base64,R0lGODlhAQABAPAAAP///////yH5BAAAAAAALAAAAAABAAEAAAICRAEAOw==');
+  background-repeat: no-repeat;
+  background-size: 0 2px, 0 100%, 0% 2px;
+  background-position: top center, top center, bottom center;
+  -webkit-animation: drawBorderFromCenter 4s;
+}
+
+/* Chrome, Safari, Opera */
+@-webkit-keyframes drawBorderFromCenter {
+    0% {
+      background-size: 0 2px, 0 0, 100% 100%;
+    }
+    20% {
+      background-size: 100% 2px, 100% 0, 100% 100%;
+    }
+    66%
+    {
+      background-size: 100% 2px, 100% 98%, 100% 100%;
+    }
+    99%
+    {
+      background-size: 100% 2px, 100% 98%, 0 2px;
+    }
+}
+
+
+
+.contentes
+{
+    background: rgba(255,255,255);
+   
+}

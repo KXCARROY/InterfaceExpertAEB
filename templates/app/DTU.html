@@ -1,0 +1,1024 @@
+{% extends 'base.html' %}
+{% block content %}
+{% load static %}
+
+
+{% comment %} Déclaration des feuilles de style {% endcomment %}
+<link rel = "stylesheet" type="text/css" href="{% static 'css/style.css' %}"/>
+<link rel = "stylesheet" type="text/css" href="{% static 'css/boutonCadre.css' %}"/>
+<link rel = "stylesheet" type="text/css" href="{% static 'css/download.css' %}"/>
+<link rel = "stylesheet" type="text/css" href="{% static 'css/recherche.css' %}"/>
+<link rel = "stylesheet" type="text/css" href="{% static 'css/DTU.css' %}"/>
+<link rel = "stylesheet" type="text/css" href="{% static 'css/image.css' %}"/>
+<link rel = "stylesheet" type="text/css" href="{% static 'css/titre.css' %}"/>
+{% comment %} Déclaration JS {% endcomment %}
+<script src="{% static 'js/DTU.js' %}"></script>
+
+{% comment %} Bouton Accueil {% endcomment %}
+<section align="left" class="portfolio-experiment">
+  <a href="/accueil">
+    <span class="text">Accueil</span>
+    <span class="line -right"></span>
+    <span class="line -top"></span>
+    <span class="line -left"></span>
+    <span class="line -bottom"></span>
+  </a>
+</section>
+
+<section align="right" >
+  <input  id="searchbar" onkeyup="search_DTU()" type="text" name="search" placeholder="Rechercher DTU">
+</section> <br>
+
+<center>
+  <div class="container">
+    <p>
+      <span>
+        DTU
+      </span>
+    </p>
+  </div>
+<br><br>
+</center> 
+
+
+{% comment %} DTU12 {% endcomment %}
+
+
+<button class="collapsible" >12. Terrassement</button>
+
+<div class="content" style="overflow : hidden;">
+  <ul>
+  <li ><a class="lien" target = "_blank" href="{% static 'pdf/12_cahier_des_clauses_speciales.pdf' %}">12. Cahier des clauses spéciales</a><br></li>
+  <li ><a class="lien" target = "_blank" href="{% static 'pdf/12_momento.pdf' %}">12. Momento </a><br>
+  <li ><a class="lien" target = "_blank" href="{% static 'pdf/12_terrassement_de_batiment.pdf' %}">12. Terrassement de batiment</a><br>
+  </ul> 
+  <center>
+  <div class="download-btn btn-1">
+    <div class="top">
+      <i class="fa fa-cloud-download">Télécharger</i> 
+    </div>
+    <a href="{% static 'download/DTU12.zip' %}" download="DTU12.zip">
+    <div class="bottom">
+      DTU12
+    </div>
+  </div>
+
+</a>
+</center>
+</div> 
+
+
+
+{% comment %} DTU13 {% endcomment %}
+<button class="collapsible">13. Fondations</button>
+<div class="content" style="overflow : hidden;">
+  <ul>
+    <li><h2>13.1 Fondations profondes</h2>
+      <ul>
+      <li><a class="lien" target = "_blank" href="{% static 'pdf/13.1_cahier_des_clauses_techniques.pdf' %}">13.1 Cahier des clauses techniques</a><br>
+      <li><a class="lien" target = "_blank" href="{% static 'pdf/13.1_cahier_des_clauses_speciales.pdf' %}">13.1 Cahier des clauses spéciales</a><br>
+     </ul>
+    </li>
+  </ul>
+  <center>
+  <div class="download-btn btn-1">
+    <div class="top">
+      <i class="fa fa-cloud-download">Télécharger</i> 
+    </div>
+    <a href="{% static 'download/DTU13.1.zip' %}" download="DTU13.1.zip">
+    <div class="bottom">
+      DTU13.1
+    </div>
+  </div>
+</a>
+</center>
+
+<ul>
+  <li><h2>13.2 Dallage, conception , réalisation</h2>
+    <ul>
+    <li><a class="lien" target = "_blank" href="{% static 'pdf/13.2_clauses_specialesrtf.pdf' %}">13.2 Cahier des clauses spéciales RTF</a><br>
+    <li><a class="lien" target = "_blank" href="{% static 'pdf/13.2_clauses_techniques.pdf' %}">13.2 Cahier des clauses techniques partie 1</a><br>
+    <li><a class="lien" target = "_blank" href="{% static 'pdf/13.2_clauses_techniques2.pdf' %}">13.2 Cahier des clauses techniques partie 2</a><br>
+    <li><a class="lien" target = "_blank" href="{% static 'pdf/13.2_clauses_techniques3.pdf' %}">13.2 Cahier des clauses techniques partie 3</a><br>
+    </ul>
+  </li>
+</ul>
+<center>
+<div class="download-btn btn-1">
+  <div class="top">
+    <i class="fa fa-cloud-download">Télécharger</i> 
+  </div>
+  <a href="{% static 'download/DTU13.2.zip' %}" download="DTU13.2.zip">
+  <div class="bottom">
+    DTU13.2
+  </div>
+</div>
+</a>
+</center>
+
+<ul>
+  <li><h2>13.3 Fondations superficielles</h2>
+    <ul>
+      <li><a class="lien" target = "_blank" href="{% static 'pdf/13.3_cahier_des_clauses_techniques.pdf' %}">13.3 Cahier des clauses techniques</a><br>
+      <li><a class="lien" target = "_blank" href="{% static 'pdf/13.3_cahier_des_clauses_speciales.pdf' %}">13.3 Cahier des clauses spéciales</a><br>
+   </ul>
+  </li>
+</ul>
+<center>
+<div class="download-btn btn-1">
+  <div class="top">
+    <i class="fa fa-cloud-download">Télécharger</i> 
+  </div>
+  <a href="{% static 'download/DTU13.3.zip' %}" download="DTU13.3.zip">
+  <div class="bottom">
+    DTU13.3
+  </div>
+</div>
+</a>
+</center>
+<br><br>
+
+
+<div class="download-btn btn-1">
+  <div class="top">
+    <i class="fa fa-cloud-download">Télécharger DTU13</i> 
+  </div>
+  <a href="{% static 'download/DTU13.zip' %}" download="DTU13.zip">
+  <div class="bottom">
+    Global
+  </div>
+</div>
+</a>
+
+</div>
+
+
+
+{% comment %} DTU14 {% endcomment %}
+
+<button class="collapsible">14. Travaux de cuvelage</button>
+<div class="content" style="overflow : hidden;">
+  
+  <ul>
+  <li><a class="lien" target = "_blank" href="{% static 'pdf/14_clauses_speciales.pdf' %}">14. Cahier des clauses spéciales</a><br>
+  <li><a class="lien" target = "_blank" href="{% static 'pdf/14_clauses_techniques.pdf' %}">14. Cahier des clauses techniques</a><br>
+  </ul>
+  </tr>
+  <center>
+  <div class="download-btn btn-1">
+    <div class="top">
+      <i class="fa fa-cloud-download">Télécharger</i> 
+    </div>
+    <a href="{% static 'download/DTU14.zip' %}" download="DTU14.zip">
+    <div class="bottom">
+      DTU14
+    </div>
+  </div>
+</a>
+</center>
+
+</div>
+
+
+{% comment %} DTU20 {% endcomment %}
+<button class="collapsible">20. Maçonnerie</button>
+<div class="content" style="overflow : hidden;">
+  <ul>
+    <li><h2>20.1 Ouvrage en maçonnerie de petits éléments</h2>
+      <ul>
+      <li><a class="lien" target = "_blank" href="{% static 'pdf/20.1_cahier_des_clauses_techniques_1.pdf' %}">20.1 Cahier des clauses techniques</a><br>
+      <li><a class="lien" target = "_blank" href="{% static 'pdf/20.1_cahier_des_clauses_techniques_2.pdf' %}">20.1 Cahier des clauses techniques 2</a><br>
+      <li><a class="lien" target = "_blank" href="{% static 'pdf/20.1_regle_de_calculs.pdf' %}">20.1 Règle de calculs</a><br>
+      <li><a class="lien" target = "_blank" href="{% static 'pdf/20.1_cahier_des_clauses_administratives.pdf' %}">20.1 Cahier des clauses administratives</a><br>
+      <li><a class="lien" target = "_blank" href="{% static 'pdf/20.1_guide_des_choix_en_fonction_du_site.pdf' %}">20.1 Guide des choix en fonction du site</a><br>
+     </ul>
+    </li>
+  </ul>
+  <center>
+  <div class="download-btn btn-1">
+    <div class="top">
+      <i class="fa fa-cloud-download">Télécharger</i> 
+    </div>
+    <a href="{% static 'download/DTU20.1.zip' %}" download="DTU20.1.zip">
+    <div class="bottom">
+      DTU20.1
+    </div>
+  </div>
+</a>
+</center>
+
+<ul>
+  <li><h2>20.12 Gros œuvre en maçonnerie des toitures destinées à un revêtement d'étanchéité</h2>
+    <ul>
+    <li><a class="lien" target = "_blank" href="{% static 'pdf/20.12_cahier_des_clauses_speciales.pdf' %}">20.12 Cahier des clauses spéciales</a><br>
+    <li><a class="lien" target = "_blank" href="{% static 'pdf/20.12_cahier_des_clauses_techniques.pdf' %}">20.12 Cahier des clauses techniques</a><br>
+    </ul>
+  </li>
+</ul>
+<center>
+<div class="download-btn btn-1">
+  <div class="top">
+    <i class="fa fa-cloud-download">Télécharger</i> 
+  </div>
+  <a href="{% static 'download/DTU20.12.zip' %}" download="DTU20.12.zip">
+  <div class="bottom">
+    DTU20.12
+  </div>
+</div>
+</a>
+</center>
+
+<ul>
+  <li><h2>20.13 Cloisons en maçonnerie de petits éléments</h2>
+    <ul>
+      <li><a class="lien" target = "_blank" href="{% static 'pdf/20.13_cahier_des_clauses_techniques_1.pdf' %}">20.13 Cahier des clauses techniques </a><br>
+      <li><a class="lien" target = "_blank" href="{% static 'pdf/20.13_cahier_des_clauses_techniques_2.pdf' %}">20.13 Cahier des clauses techniques 2</a><br>
+      <li><a class="lien" target = "_blank" href="{% static 'pdf/20.13_momento.pdf' %}">20.13 Momento</a><br>
+      <li><a class="lien" target = "_blank" href="{% static 'pdf/20.13_cahier_des_clauses_administratives.pdf' %}">20.13 Cahier des clauses administrat20.13</a><br>
+   </ul>
+  </li>
+</ul>
+<center>
+<div class="download-btn btn-1">
+  <div class="top">
+    <i class="fa fa-cloud-download">Télécharger</i> 
+  </div>
+  <a href="{% static 'download/DTU20.13.zip' %}" download="DTU20.13.zip">
+  <div class="bottom">
+    DTU20.13
+  </div>
+</div>
+</a>
+</center>
+<br><br>
+
+
+<div class="download-btn btn-1">
+  <div class="top">
+    <i class="fa fa-cloud-download">Télécharger DTU20</i> 
+  </div>
+  <a href="{% static 'download/DTU20.zip' %}" download="DTU20.zip">
+  <div class="bottom">
+    Global
+  </div>
+</div>
+</a>
+</div>
+
+
+
+
+{% comment %} DTU21 {% endcomment %}
+
+<button class="collapsible">21. Exécution des ouvrages en béton</button>
+<div class="content" style="overflow : hidden;">
+  <ul>
+      <li><a class="lien" target = "_blank" href="{% static 'pdf/21_cahier_des_clauses_techniques.pdf' %}">21. Cahier des clauses techniques</a><br>
+  </ul>
+  <center>
+  <div class="download-btn btn-1">
+    <div class="top">
+      <i class="fa fa-cloud-download">Télécharger</i> 
+    </div>
+    <a href="{% static 'download/DTU21.zip' %}" download="DTU21.zip">
+    <div class="bottom">
+      DTU21
+    </div>
+  </div>
+</a>
+</center>
+
+<ul>
+  <li><h2>21.3 Dalles et volée d'escalier préfabriqué</h2>
+    <ul>
+    <li><a class="lien" target = "_blank" href="{% static 'pdf/21.3_prescription_techniques.pdf' %}">21.3 Préscription techniques</a><br>
+    </ul>
+  </li>
+</ul>
+<center>
+<div class="download-btn btn-1">
+  <div class="top">
+    <i class="fa fa-cloud-download">Télécharger</i> 
+  </div>
+  <a href="{% static 'download/DTU21.3.zip' %}" download="DTU21.3.zip">
+  <div class="bottom">
+    DTU21.3
+  </div>
+</div>
+</a>
+</center>
+
+<ul>
+  <li><h2>21.4 Mortier et béton</h2>
+    <ul>
+      <li><a class="lien" target = "_blank" href="{% static 'pdf/21.4_utilisation_mortier_et_beton.pdf' %}">21.4 Mortier et béton</a><br>
+   </ul>
+  </li>
+</ul>
+<center>
+<div class="download-btn btn-1">
+  <div class="top">
+    <i class="fa fa-cloud-download">Télécharger</i> 
+  </div>
+  <a href="{% static 'download/DTU21.4.zip' %}" download="DTU21.4.zip">
+  <div class="bottom">
+    DTU21.4
+  </div>
+</div>
+</a>
+</center>
+<br><br>
+
+
+<div class="download-btn btn-1">
+  <div class="top">
+    <i class="fa fa-cloud-download">Télécharger DTU21</i> 
+  </div>
+  <a href="{% static 'download/DTU21G.zip' %}" download="DTU21.zip">
+  <div class="bottom">
+    Global
+  </div>
+</div>
+</a>
+</div>
+
+
+
+{% comment %} DTU22 {% endcomment %}
+<button class="collapsible">22. Grands panneaux nervurés</button>
+<div class="content" style="overflow : hidden;">
+  <ul>
+    <li><h2>22.1 Murs extérieurs en panneaux préfabriqués de grande dimensions de type plaques pleine nervurées ou béton</h2>
+      <ul>
+      <li><a class="lien" target = "_blank" href="{% static 'pdf/22.1_cahier_des_charges.pdf' %}">22.1 Cahier des charges</a><br>
+      <li><a class="lien" target = "_blank" href="{% static 'pdf/22.1_cahier_des_clauses_speciales.pdf' %}">22.1 Cahier des clauses spéciales</a><br>
+      <li><a class="lien" target = "_blank" href="{% static 'pdf/22.1_momento.pdf' %}">22.1 Momento</a><br>
+     </ul>
+    </li>
+  </ul>
+  <center>
+  <div class="download-btn btn-1">
+    <div class="top">
+      <i class="fa fa-cloud-download">Télécharger</i> 
+    </div>
+    <a href="{% static 'download/DTU22.1.zip' %}" download="DTU22.1.zip">
+    <div class="bottom">
+      DTU22.1
+    </div>
+  </div>
+</a>
+</center>
+
+</div>
+
+
+
+
+
+
+
+{% comment %} DTU24 {% endcomment %}
+
+<button class="collapsible">24. Fumisterie</button>
+<div class="content" style="overflow : hidden;">
+<ul>
+  <li><h2>24.1 Travaux de fumisterie</h2>
+    <ul>
+    <li><a class="lien" target = "_blank" href="{% static 'pdf/24.1_cahier_des_clauses_techniques.pdf' %}">24.1 Cahier des clauses techniques</a><br>
+    <li><a class="lien" target = "_blank" href="{% static 'pdf/24.1_cahier_des_clauses_techniques2.pdf' %}">24.1 Cahier des clauses techniques 2</a><br>
+    <li><a class="lien" target = "_blank" href="{% static 'pdf/24.1_cahier_des_clauses_speciales.pdf' %}">24.1 Cahier des clauses spéciales</a><br>
+    </ul>
+  </li>
+</ul>
+<center>
+<div class="download-btn btn-1">
+  <div class="top">
+    <i class="fa fa-cloud-download">Télécharger</i> 
+  </div>
+  <a href="{% static 'download/DTU24.1.zip' %}" download="DTU24.1.zip">
+  <div class="bottom">
+    DTU24.1
+  </div>
+</div>
+</a>
+</center>
+
+<ul>
+  <li><h2>24.2 Cheminée</h2>
+    <ul>
+      <li><a class="lien" target = "_blank" href="{% static 'pdf/24.2_cahier_des_clauses_techniques.pdf' %}">24.2 Cahier des clauses techniques</a><br>
+      <li><a class="lien" target = "_blank" href="{% static 'pdf/24.2_cahier_des_clauses_speciales.pdf' %}">24.2 Cahier des clauses spéciales</a><br>
+      <li><a class="lien" target = "_blank" href="{% static 'pdf/24.2_utilisation_mortier_et_beton.pdf' %}">24.2 Choix des matériaux</a><br>
+   </ul>
+  </li>
+</ul>
+<center>
+<div class="download-btn btn-1">
+  <div class="top">
+    <i class="fa fa-cloud-download">Télécharger</i> 
+  </div>
+  <a href="{% static 'download/DTU24.2.zip' %}" download="DTU24.2.zip">
+  <div class="bottom">
+    DTU24.2
+  </div>
+</div>
+</a>
+</center>
+<br><br>
+
+
+<div class="download-btn btn-1">
+  <div class="top">
+    <i class="fa fa-cloud-download">Télécharger DTU24</i> 
+  </div>
+  <a href="{% static 'download/DTU24.zip' %}" download="DTU24.zip">
+  <div class="bottom">
+    Global
+  </div>
+</div>
+</a>
+</div>
+
+
+
+{% comment %} DTU25 {% endcomment %}
+
+<button class="collapsible">25. Plâterie</button>
+<div class="content" style="overflow : hidden;">
+<ul>
+  <li><h2>25.1 Enduits intérieur en plâtre</h2>
+    <ul>
+    <li><a class="lien" target = "_blank" href="{% static 'pdf/25.1_clauses_administratives_speciales.pdf' %}">25.1 Clauses administratives spéciales</a><br>
+    <li><a class="lien" target = "_blank" href="{% static 'pdf/25.1_choix_des_materiaux.pdf' %}">25.1 Choix des matériaux</a><br>
+    <li><a class="lien" target = "_blank" href="{% static 'pdf/25.1_cahier_des_clauses_techniques.pdf' %}">25.1 Cahier des clauses techniques</a><br>
+    </ul>
+  </li>
+</ul>
+<center>
+<div class="download-btn btn-1">
+  <div class="top">
+    <i class="fa fa-cloud-download">Télécharger</i> 
+  </div>
+  <a href="{% static 'download/DTU25.1.zip' %}" download="DTU25.1.zip">
+  <div class="bottom">
+    DTU25.1
+  </div>
+</div>
+</a>
+</center>
+
+<ul>
+  <li><h2>25.2 Plafonds</h2>
+    <ul>
+      <li><a class="lien" target = "_blank" href="{% static 'pdf/25.2_cahier_des_charges.pdf' %}">25.2 Cahier des charges</a><br>
+   </ul>
+  </li>
+</ul>
+<center>
+<div class="download-btn btn-1">
+  <div class="top">
+    <i class="fa fa-cloud-download">Télécharger</i> 
+  </div>
+  <a href="{% static 'download/DTU25.2.zip' %}" download="DTU25.2.zip">
+  <div class="bottom">
+    DTU25.2
+  </div>
+</div>
+</a>
+</center>
+
+
+<ul>
+  <li><h2>25.31 Ouvrages verticaux de plâtrerie ne nécessitant pas l'application  d'un enduit de plâtre</h2>
+    <ul>
+    <li><a class="lien" target = "_blank" href="{% static 'pdf/25.31_cahier_des_clauses_techniques.pdf' %}">25.31 Cahier des clauses techniques</a><br>
+    <li><a class="lien" target = "_blank" href="{% static 'pdf/25.31_cahier_des_clauses_speciales.pdf' %}">25.31 Cahier des clauses spéciales</a><br>
+    <li><a class="lien" target = "_blank" href="{% static 'pdf/25.31_momento.pdf' %}">25.31 Momento</a><br>
+    </ul>
+  </li>
+</ul>
+<center>
+<div class="download-btn btn-1">
+  <div class="top">
+    <i class="fa fa-cloud-download">Télécharger</i> 
+  </div>
+  <a href="{% static 'download/DTU25.31.zip' %}" download="DTU25.31.zip">
+  <div class="bottom">
+    DTU25.31
+  </div>
+</div>
+</a>
+</center>
+
+
+<ul>
+  <li><h2>25.41 Ouvrages en plaques de plâtre</h2>
+    <ul>
+    <li><a class="lien" target = "_blank" href="{% static 'pdf/25.41_cahier_des_clauses_techniques.pdf' %}">25.41 Cahier des clauses techniques</a><br>
+    <li><a class="lien" target = "_blank" href="{% static 'pdf/25.41_clauses_administratives.pdf' %}">25.41 Cahier des clauses administratives</a><br>
+    <li><a class="lien" target = "_blank" href="{% static 'pdf/25.41_choix_des_materiaux.pdf' %}">25.41 Choix des matériaux</a><br>
+    </ul>
+  </li>
+</ul>
+<center>
+<div class="download-btn btn-1">
+  <div class="top">
+    <i class="fa fa-cloud-download">Télécharger</i> 
+  </div>
+  <a href="{% static 'download/DTU25.41.zip' %}" download="DTU25.41.zip">
+  <div class="bottom">
+    DTU25.41
+  </div>
+</div>
+</a>
+</center>
+
+
+<ul>
+  <li><h2>25.42 Ouvrages de doublage et habillage en complexes et sandwiches</h2>
+    <ul>
+    <li><a class="lien" target = "_blank" href="{% static 'pdf/25.42_cahier_des_clauses_techniques.pdf' %}">25.42 Cahier des clauses techniques</a><br>
+    <li><a class="lien" target = "_blank" href="{% static 'pdf/25.42_cahier_des_clauses_techniques2.pdf' %}">25.42 Cahier des clauses techniques 2</a><br>
+    <li><a class="lien" target = "_blank" href="{% static 'pdf/25.42_cahier_des_clauses_speciales.pdf' %}">25.42 Cahier des clauses spéciales</a><br>
+    <li><a class="lien" target = "_blank" href="{% static 'pdf/25.42_momento.pdf' %}">25.42 Momento</a><br>
+
+    </ul>
+  </li>
+</ul>
+<center>
+<div class="download-btn btn-1">
+  <div class="top">
+    <i class="fa fa-cloud-download">Télécharger</i> 
+  </div>
+  <a href="{% static 'download/DTU25.42.zip' %}" download="DTU25.42.zip">
+  <div class="bottom">
+    DTU25.42
+  </div>
+</div>
+</a>
+</center>
+
+
+<ul>
+  <li><h2>25.51 Mise en oeuvre des plafonds staff</h2>
+    <ul>
+      <li><a class="lien" target = "_blank" href="{% static 'pdf/25.51_cahier_des_clauses_techniques.pdf' %}">25.51 Cahier des clauses techniques</a><br>
+      <li><a class="lien" target = "_blank" href="{% static 'pdf/25.51_clauses_administratives.pdf' %}">25.51 Cahier des clauses administratives</a><br>
+      <li><a class="lien" target = "_blank" href="{% static 'pdf/25.51_choix_des_materiaux.pdf' %}">25.51 Choix des matériaux</a><br>
+    </ul>
+  </li>
+</ul>
+<center>
+<div class="download-btn btn-1">
+  <div class="top">
+    <i class="fa fa-cloud-download">Télécharger</i> 
+  </div>
+  <a href="{% static 'download/DTU25.51.zip' %}" download="DTU25.51.zip">
+  <div class="bottom">
+    DTU25.51
+  </div>
+</div>
+</a>
+</center>
+<br><br>
+
+
+<div class="download-btn btn-1">
+  <div class="top">
+    <i class="fa fa-cloud-download">Télécharger DTU25</i> 
+  </div>
+  <a href="{% static 'download/DTU25.zip' %}" download="DTU25.zip">
+  <div class="bottom">
+    Global
+  </div>
+</div>
+</a>
+</div>
+
+
+
+
+{% comment %} DTU26 {% endcomment %}
+
+<button class="collapsible">26. Enduit liant hydraulique</button>
+<div class="content" style="overflow : hidden;">
+<ul>
+  <li><h2>26.1 Travaux d'enduit de mortier</h2>
+    <ul>
+    <li><a class="lien" target = "_blank" href="{% static 'pdf/26.1_cahier_des_clauses_speciales.pdf' %}">26.1 Cahier des clauses spéciales</a><br>
+    <li><a class="lien" target = "_blank" href="{% static 'pdf/26.1_choix_des_materiaux.pdf' %}">26.1 Choix des matériaux</a><br>
+    <li><a class="lien" target = "_blank" href="{% static 'pdf/26.1_cahier_des_clauses_techniques.pdf' %}">26.1 Cahier des clauses techniques</a><br>
+    </ul>
+  </li>
+</ul>
+<center>
+<div class="download-btn btn-1">
+  <div class="top">
+    <i class="fa fa-cloud-download">Télécharger</i> 
+  </div>
+  <a href="{% static 'download/DTU26.1.zip' %}" download="DTU26.1.zip">
+  <div class="bottom">
+    DTU26.1
+  </div>
+</div>
+</a>
+</center>
+
+<ul>
+  <li><h2>26.2 Chappes et dalles à base de liant hydraulique</h2>
+    <ul>
+      <li><a class="lien" target = "_blank" href="{% static 'pdf/26.2_choix_des_materiaux.pdf' %}">26.2 Choix des matériaux</a><br>
+      <li><a class="lien" target = "_blank" href="{% static 'pdf/26.2_cahier_des_clauses_techniques.pdf' %}">26.2 Cahier de clauses techniques</a><br>
+      <li><a class="lien" target = "_blank" href="{% static 'pdf/26.2_cahier_des_clauses_administratives.pdf' %}">26.2 Cahier des clauses administratives</a><br>
+   </ul>
+  </li>
+</ul>
+<center>
+<div class="download-btn btn-1">
+  <div class="top">
+    <i class="fa fa-cloud-download">Télécharger</i> 
+  </div>
+  <a href="{% static 'download/DTU26.2.zip' %}" download="DTU26.2.zip">
+  <div class="bottom">
+    DTU26.2
+  </div>
+</div>
+</a>
+</center>
+
+
+<ul>
+  <li><h2>26.52 Sous couches isolantes</h2>
+    <ul>
+    <li><a class="lien" target = "_blank" href="{% static 'pdf/26.2.52_mise_en_oeuvre.pdf' %}">26.2.52 Mise en oeuvre</a><br>
+    </ul>
+  </li>
+</ul>
+<center>
+<div class="download-btn btn-1">
+  <div class="top">
+    <i class="fa fa-cloud-download">Télécharger</i> 
+  </div>
+  <a href="{% static 'download/DTU26.52.zip' %}" download="DTU26.52.zip">
+  <div class="bottom">
+    DTU26.52
+  </div>
+</div>
+</a>
+</center>
+<br><br>
+
+<div class="download-btn btn-1">
+  <div class="top">
+    <i class="fa fa-cloud-download">Télécharger DTU26</i> 
+  </div>
+  <a href="{% static 'download/DTU26.zip' %}" download="DTU26.zip">
+  <div class="bottom">
+    Global
+  </div>
+</div>
+</a>
+</div>
+
+
+{% comment %} DTU27 {% endcomment %}
+<button class="collapsible">27. Enduits projetés</button>
+<div class="content" style="overflow : hidden;">
+<ul>
+  <li><h2>27.1 Réalisation d'un revêtement par projection pneumatique des fibres minérales</h2>
+    <ul>
+    <li><a class="lien" target = "_blank" href="{% static 'pdf/27.1_cahier_des_clauses_techniques.pdf' %}">27.1 Cahier des clauses techniques</a><br>
+    <li><a class="lien" target = "_blank" href="{% static 'pdf/27.1_cahier_des_clauses_speciales.pdf' %}">27.1 Cahier des clauses spéciales</a><br>
+    </ul>
+  </li>
+</ul>
+<center>
+<div class="download-btn btn-1">
+  <div class="top">
+    <i class="fa fa-cloud-download">Télécharger</i> 
+  </div>
+  <a href="{% static 'download/DTU27.1.zip' %}" download="DTU27.1.zip">
+  <div class="bottom">
+    DTU27.1
+  </div>
+</div>
+</a>
+</center>
+
+<ul>
+  <li><h2>27.2 Réalisation d'un revêtement par projection de produits pâteux</h2>
+    <ul>
+      <li><a class="lien" target = "_blank" href="{% static 'pdf/27.2_cahier_des_clauses_techniques.pdf' %}">27.2 Cahier des clauses techniques</a><br>
+      <li><a class="lien" target = "_blank" href="{% static 'pdf/27.2_cahier_des_clauses_speciales.pdf' %}">27.2 Cahier des clauses spéciales</a><br>
+   </ul>
+  </li>
+</ul>
+<center>
+<div class="download-btn btn-1">
+  <div class="top">
+    <i class="fa fa-cloud-download">Télécharger</i> 
+  </div>
+  <a href="{% static 'download/DTU27.2.zip' %}" download="DTU27.2.zip">
+  <div class="bottom">
+    DTU27.2
+  </div>
+</div>
+</a>
+</center>
+<br><br>
+
+
+<div class="download-btn btn-1">
+  <div class="top">
+    <i class="fa fa-cloud-download">Télécharger DTU27</i> 
+  </div>
+  <a href="{% static 'download/DTU27.zip' %}" download="DTU27.zip">
+  <div class="bottom">
+    Global
+  </div>
+</div>
+</a>
+</div>
+
+
+{% comment %} DTU31 {% endcomment %}
+
+<button class="collapsible">31. Constructions en bois</button>
+<div class="content" style="overflow : hidden;">
+<ul>
+  <li><h2>31.1 Charpente et escaliers en bois</h2>
+    <ul>
+    <li><a class="lien" target = "_blank" href="{% static 'pdf/31.1_cahier_des_clauses_techniques.pdf' %}">31.1 Cahier des clauses techniques</a><br>
+    <li><a class="lien" target = "_blank" href="{% static 'pdf/31.1_cahier_des_clauses_techniques2.pdf' %}">31.1 Cahier des clauses techniques 2</a><br>
+    <li><a class="lien" target = "_blank" href="{% static 'pdf/31.1_cahier_des_clauses_speciales.pdf' %}">31.1 Cahier des clauses spéciales</a><br>
+    <li><a class="lien" target = "_blank" href="{% static 'pdf/31.1_cahier_des_clauses_speciales2.pdf' %}">31.1 Cahier des clauses spéciales 2</a><br>
+    </ul>
+  </li>
+</ul>
+<center>
+<div class="download-btn btn-1">
+  <div class="top">
+    <i class="fa fa-cloud-download">Télécharger</i> 
+  </div>
+  <a href="{% static 'download/DTU31.1.zip' %}" download="DTU31.1.zip">
+  <div class="bottom">
+    DTU31.1
+  </div>
+</div>
+</a>
+</center>
+
+<ul>
+  <li><h2>31.2 Construction de maisons et bâtiments à ossature bois</h2>
+    <ul>
+      <li><a class="lien" target = "_blank" href="{% static 'pdf/31.2_cahier_des_clauses_techniques.pdf' %}">31.2 Cahier des clauses techniques</a><br>
+      <li><a class="lien" target = "_blank" href="{% static 'pdf/31.2_cahier_des_clauses_administratives.pdf' %}">31.2 Cahier des clauses administratives</a><br>
+      <li><a class="lien" target = "_blank" href="{% static 'pdf/31.2_choix_des_materiaux.pdf' %}">31.2 Choix des matériaux</a><br>
+   </ul>
+  </li>
+</ul>
+<center>
+<div class="download-btn btn-1">
+  <div class="top">
+    <i class="fa fa-cloud-download">Télécharger</i> 
+  </div>
+  <a href="{% static 'download/DTU31.2.zip' %}" download="DTU31.2.zip">
+  <div class="bottom">
+    DTU31.2
+  </div>
+</div>
+</a>
+</center>
+
+<ul>
+  <li><h2>31.3 Charpente en bois assemblée par connecteurs métalliques ou goussets</h2>
+    <ul>
+      <li><a class="lien" target = "_blank" href="{% static 'pdf/31.3_mise_en_oeuvre.pdf' %}">31.3 Mise en oeuvre</a><br>
+      <li><a class="lien" target = "_blank" href="{% static 'pdf/31.3_cahier_des_clauses_speciales.pdf' %}">31.3 Cahier des clauses spéciales</a><br>
+      <li><a class="lien" target = "_blank" href="{% static 'pdf/31.3_regles_de_conception.pdf' %}">31.3 Règles de conception</a><br>
+      </ul>
+  </li>
+</ul>
+<center>
+<div class="download-btn btn-1">
+  <div class="top">
+    <i class="fa fa-cloud-download">Télécharger</i> 
+  </div>
+  <a href="{% static 'download/DTU31.3.zip' %}" download="DTU31.3.zip">
+  <div class="bottom">
+    DTU31.3
+  </div>
+</div>
+</a>
+</center>
+<br><br>
+
+
+<div class="download-btn btn-1">
+  <div class="top">
+    <i class="fa fa-cloud-download">Télécharger DTU31</i> 
+  </div>
+  <a href="{% static 'download/DTU31.zip' %}" download="DTU31.zip">
+  <div class="bottom">
+    Global
+  </div>
+</div>
+</a>
+</div>
+
+
+{% comment %} DTU32 {% endcomment %}
+
+<button class="collapsible">32. Constructions métalliques</button>
+<div class="content" style="overflow : hidden;">
+<ul>
+  <li><h2>32.1 Charpente métallique </h2>
+    <ul>
+    <li><a class="lien" target = "_blank" href="{% static 'pdf/32.1_cahier_des_clauses_techniques.pdf' %}">32.1 Cahier des clauses techniques</a><br>
+    <li><a class="lien" target = "_blank" href="{% static 'pdf/32.1_cahier_des_clauses_administratives_speciales.pdf' %}">32.1 Cahier des clauses administratives spéciales</a><br>
+    </ul>
+  </li>
+</ul>
+<center>
+<div class="download-btn btn-1">
+  <div class="top">
+    <i class="fa fa-cloud-download">Télécharger</i> 
+  </div>
+  <a href="{% static 'download/DTU32.1.zip' %}" download="DTU32.1.zip">
+  <div class="bottom">
+    DTU32.1
+  </div>
+</div>
+</a>
+</center>
+</div>
+
+
+{% comment %} DTU33 {% endcomment %}
+
+<button class="collapsible">33. Façades légères</button>
+<div class="content" style="overflow : hidden;">
+  <ul>
+    <li><h2>33.1 Façades rideaux </h2>
+      <ul>
+      <li><a class="lien" target = "_blank" href="{% static 'pdf/33.1_cahier_des_clauses_techniques.pdf' %}">33.1 Cahier des clauses techniques</a><br>
+      <li><a class="lien" target = "_blank" href="{% static 'pdf/33.1_cahier_des_clauses_administratives.pdf' %}">33.1 Cahier des clauses administratives </a><br>
+      <li><a class="lien" target = "_blank" href="{% static 'pdf/33.1_choix_des_materiaux.pdf' %}">33.1 Choix des matériaux</a><br>
+      </ul>
+    </li>
+  </ul>
+<center>
+<div class="download-btn btn-1">
+  <div class="top">
+    <i class="fa fa-cloud-download">Télécharger</i> 
+  </div>
+  <a href="{% static 'download/DTU33.1.zip' %}" download="DTU33.1.zip">
+  <div class="bottom">
+    DTU33.1
+  </div>
+</div>
+</a>
+</center>
+
+<ul>
+  <li><h2>33.2 Tolérances dimensionnelles </h2>
+    <ul>
+      <li><a class="lien" target = "_blank" href="{% static 'pdf/33.2_tolerances_dimensionnelles.pdf' %}">33.2 tolérances dimensionnelles</a><br>
+   </ul>
+  </li>
+</ul>
+<center>
+<div class="download-btn btn-1">
+  <div class="top">
+    <i class="fa fa-cloud-download">Télécharger</i> 
+  </div>
+  <a href="{% static 'download/DTU33.2.zip' %}" download="DTU33.2.zip">
+  <div class="bottom">
+    DTU33.2
+  </div>
+</div>
+</a>
+</center>
+<br><br>
+
+<div class="download-btn btn-1">
+  <div class="top">
+    <i class="fa fa-cloud-download">Télécharger DTU33</i> 
+  </div>
+  <a href="{% static 'download/DTU33.zip' %}" download="DTU33.zip">
+  <div class="bottom">
+    Global
+  </div>
+</div>
+</a>
+</div>
+
+
+{% comment %} DTU34 {% endcomment %}
+
+<button class="collapsible">34. Fermetures</button>
+<div class="content" style="overflow : hidden;">
+  <ul>
+    <li><h2>34.1 Ouvrage de fermeture pour baies libres </h2>
+      <ul>
+      <li><a class="lien" target = "_blank" href="{% static 'pdf/34.1_cahier_des_clauses_techniques.pdf' %}">34.1 Cahier des clauses techniques</a><br>
+      <li><a class="lien" target = "_blank" href="{% static 'pdf/34.1_cahier_des_clauses_speciales.pdf' %}">34.1 Cahier des clauses spéciales </a><br>
+      </ul>
+    </li>
+  </ul>
+<center>
+<div class="download-btn btn-1">
+  <div class="top">
+    <i class="fa fa-cloud-download">Télécharger</i> 
+  </div>
+  <a href="{% static 'download/DTU34.1.zip' %}" download="DTU34.1.zip">
+  <div class="bottom">
+    DTU34.1
+  </div>
+</div>
+</a>
+</center>
+
+<ul>
+  <li><h2>34.2 Choix des fermetures pour baies équipées de fenêtres </h2>
+    <ul>
+      <li><a class="lien" target = "_blank" href="{% static 'pdf/34.2_momento.pdf' %}">34.2 Momento</a><br>
+   </ul>
+  </li>
+</ul>
+<center>
+<div class="download-btn btn-1">
+  <div class="top">
+    <i class="fa fa-cloud-download">Télécharger</i> 
+  </div>
+  <a href="{% static 'download/DTU34.2.zip' %}" download="DTU34.2.zip">
+  <div class="bottom">
+    DTU34.2
+  </div>
+</div>
+</a>
+</center>
+
+
+<ul>
+  <li><h2>34.3 Choix de portes industrielles, commerciales et de garage </h2>
+    <ul>
+      <li><a class="lien" target = "_blank" href="{% static 'pdf/34.3_momento.pdf' %}">34.3 Momento</a><br>
+   </ul>
+  </li>
+</ul>
+<center>
+<div class="download-btn btn-1">
+  <div class="top">
+    <i class="fa fa-cloud-download">Télécharger</i> 
+  </div>
+  <a href="{% static 'download/DTU34.3.zip' %}" download="DTU34.3.zip">
+  <div class="bottom">
+    DTU34.3
+  </div>
+</div>
+</a>
+</center>
+<br><br>
+
+<div class="download-btn btn-1">
+  <div class="top">
+    <i class="fa fa-cloud-download">Télécharger DTU34</i> 
+  </div>
+  <a href="{% static 'download/DTU34.zip' %}" download="DTU34.zip">
+  <div class="bottom">
+    Global
+  </div>
+</div>
+</a>
+</div>
+</div>
+
+
+
+
+
+
+
+
+{% comment %} JS de la fonction pour afficher masquer le texte {% endcomment %}
+<script>
+var coll = document.getElementsByClassName("collapsible");
+var i;
+
+for (i = 0; i < coll.length; i++) {
+  coll[i].addEventListener("click", function() {
+    this.classList.toggle("active");
+    var content = this.nextElementSibling;
+    if (content.style.maxHeight){
+      content.style.maxHeight = null;
+    } else {
+      content.style.maxHeight = content.scrollHeight + "px";
+    } 
+  });
+}
+</script>
+
+</body>
+ 
+{% endblock %}

@@ -1,0 +1,76 @@
+.collapsible {
+  background-color: rgba(255, 255,255, 0.8);
+  color: black;
+  cursor: pointer;
+  padding: 18px;
+  width: 100%;
+  border: 1px solid #c73642;
+  text-align: left;
+  outline: none;
+  font-size: 20px;
+  font-weight: bold;
+  border-radius: 10px;
+
+}
+
+.active {
+  background-color: rgba(180,54,66);
+  color: white;
+}
+
+.collapsible:hover {
+  background-color: rgba(180,54,66);
+}
+
+.collapsible:after {
+  content: '\002B';
+  color: black;
+  font-weight: bold;
+  float: right;
+  margin-left: 5px;
+}
+
+.active:after {
+  content: "\2212";
+  color : white
+}
+
+.content {
+  padding: 0 18px;
+  max-height: 0;
+  transition: max-height 0.2s ease-out;
+  background-color: rgba(201,175,137, 0.5);
+  z-index: -1;
+  margin: 5px;
+
+}
+
+.lien{
+  width: 94%;
+  height: auto;
+  position: absolute;
+  color: black;
+  
+}
+
+.lien:hover{
+  background-color: #c73642;
+  
+}
+
+
+ul{
+  list-style-type: none;
+}
+
+li{
+  margin-top: 10px;
+
+  width: 100%;
+  margin-left: -15px;
+}
+
+ol{
+  width: 100%;
+  margin-left: -40px;
+}

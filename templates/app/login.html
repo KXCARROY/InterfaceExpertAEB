@@ -1,0 +1,39 @@
+{% extends 'base.html' %}
+{% block content %}
+{% load static %}
+
+{% comment %} Déclaration des feuilles de style {% endcomment %}
+<link rel = "stylesheet" type="text/css" href="{% static 'css/formulaire.css' %}"/>
+<link rel = "stylesheet" type="text/css" href="{% static 'css/background.css' %}"/>
+
+
+<div class="center"  >
+    <h1>Connexion</h1>
+    <form method="post" action"/login">
+    {% csrf_token %}
+        <div class="txt_field">
+          <input type="text" name="username" id="username" required>
+          <span></span>
+          <label>Nom d'utilisateur</label>
+        </div>
+        <div class="txt_field">
+          <input type="password" name="password" id="password" required>
+            <span></span>
+        
+          <label>Mot de passe</label>
+        </div>
+        <div class="pass"><a href="/reset_password">Mot de passe oublié?</a></div>
+        <div> 
+        {% for message in messages %}
+        <strong>{{message}}<strong>
+        {% endfor %}
+        </div>
+        <input type="submit" value="Connexion">
+        <div class="signup_link">
+          Pas de compte? <a href="/register">Inscription</a>
+        </div>
+      </form>
+    </div>
+
+
+{% endblock %}

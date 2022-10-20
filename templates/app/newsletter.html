@@ -2,7 +2,7 @@
 {% block content %}
 {% load static %}
 
-{% comment %} Déclaration des feuilles de style {% endcomment %}
+{% comment %} * Déclaration des feuilles de style * {% endcomment %}
 <link rel = "stylesheet" type="text/css" href="{% static 'css/style.css' %}"/>
 <link rel = "stylesheet" type="text/css" href="{% static 'css/boutonCadre.css' %}"/>
 <link rel = "stylesheet" type="text/css" href="{% static 'css/download.css' %}"/>
@@ -11,11 +11,11 @@
 <link rel = "stylesheet" type="text/css" href="{% static 'css/newsletter.css' %}"/>
 <link rel = "stylesheet" type="text/css" href="{% static 'css/titre.css' %}"/>
 
-{% comment %} Déclaration JS {% endcomment %}
+{% comment %} * Déclaration JS * {% endcomment %}
 <script src="{% static 'js/newsletter.js' %}"></script>
 <script src="{% static 'js/titreNL.js' %}"></script>
 
-{% comment %} Bouton Accueil {% endcomment %}
+{% comment %} * Bouton Accueil * {% endcomment %}
 <section align="left" class="portfolio-experiment">
   <a href="/accueil">
     <span class="text">Accueil</span>
@@ -26,125 +26,79 @@
   </a>
 </section>
 
+{% comment %} * Searchbar * {% endcomment %}
 <section align="right" >
   <input  id="searchbar" onkeyup="search_newsletter()" type="text" name="search" placeholder="Rechercher Newsletters">
 </section> <br>
 
   
   
-{% comment %} Page des Newsletters {% endcomment %}
-{% comment %} <form method="post" action="/newsletter" > {% endcomment %}
-  <center>
-    <div class="container">
-      <p>
-        <span>
-          Newletters
-        </span>
-      </p>
-    </div>
-    <h4><i>(Cliquez sur une newsletter pour la consulter )</i><h4>
-    </center>    
+{% comment %} * Titre des Newsletters * {% endcomment %}
+<center>
+  <div class="container">
+    <p>
+      <span>
+        Newletters
+      </span>
+    </p>
+  </div>
+  <h4><i>(Cliquez sur une newsletter pour la consulter )</i><h4>
+</center>    
 
+{% comment %} * Tableau de Newsletters * {% endcomment %}
+{% comment %} ! Les CASES fonctionne par paire ! {% endcomment %}
 
-        <table cellpadding="15" align="center" >
+<table cellpadding="15" align="center" >
 
-{% comment %} Case 1 {% endcomment %}
-            <tr>
-                <th class="newsletter">
-                  <h3>La catastrophe naturelle secheresse<h3>
-                  <h4>Septembre 2022</h4>
-                  <center>
-{% comment %} Bouton de téléchargement {% endcomment %}
-                  <div class="download-btn btn-1">
-                    <div class="top">
-                      <i class="fa fa-cloud-download">Télécharger</i> 
-                    </div>
-                    <a href="{% static 'pdf/NewsletterSeptembre2022.pdf' %}" download="Newsletter_Septembre_2022.pdf">
-                    <div class="bottom">
-                      Septembre 2022
-                    </div>
-                  </div>
-                </a>
-                <br><br>
-                <div id="tv">
-                    <a target = "_blank" href="{% static 'pdf/NewsletterSeptembre2022.pdf' %}"><img border="2" class="imgMois" src = "{% static 'images/NLS2022.png' %}"/><br>
-                </div>
-              </th>
+  <tr>
+{% comment %} * Case 1 *{% endcomment %}    
+    <th class="newsletter">
+      <h3>La catastrophe naturelle secheresse<h3>
+      <h4>Septembre 2022</h4>
+      <center>
+        <div class="download-btn btn-1">
+          <div class="top">
+            <i class="fa fa-cloud-download">Télécharger</i> 
+          </div>
+          <a href="{% static 'pdf/NewsletterSeptembre2022.pdf' %}" download="Newsletter_Septembre_2022.pdf">
+            <div class="bottom">
+               Septembre 2022
+            </div>
+          </a>
+        </div>
+      <br><br>
+        <div id="tv">
+          <a target = "_blank" href="{% static 'pdf/NewsletterSeptembre2022.pdf' %}">
+            <img border="2" class="imgMois" src = "{% static 'images/NLS2022.png' %}"/><br>
+          </a>
+        </div>
+    </th>
 
-{% comment %} Case 2 {% endcomment %}    
-              <th class="newsletter">
-                <h3>La catastrophe naturelle inondations<h3>
-                <h4>Mois Annee</h4>
-                <center>
-{% comment %} Bouton de téléchargement {% endcomment %}
-                <div class="download-btn btn-1">
-                  <div class="top">
-                     <i class="fa fa-cloud-download">Télécharger</i> 
-                  </div>
-                  <a href="pdf/NewsletterSeptembre2022.pdf" download="Newsletter_Septembre_2022.pdf">
-                  <div class="bottom">
-                  Mois Annee
-                  </div>
-                </div>
-                  </a><br><br>
-                  <div id="tv">
-                  <a target = "_blank" href="{% static 'pdf/NewsletterSeptembre2022.pdf' %}"><img border="2" class="imgMois" src = "{% static 'images/NLS2022.png' %}"/><br>
-                  </div>
-              </th>
-            </tr>
+{% comment %} * Case 2 *{% endcomment %}    
+    <th class="newsletter">
+      <h3>La catastrophe naturelle secheresse<h3>
+      <h4>Septembre 2022</h4>
+      <center>
+        <div class="download-btn btn-1">
+          <div class="top">
+            <i class="fa fa-cloud-download">Télécharger</i> 
+          </div>
+          <a href="{% static 'pdf/NewsletterSeptembre2022.pdf' %}" download="Newsletter_Septembre_2022.pdf">
+            <div class="bottom">
+               Septembre 2022
+            </div>
+          </a>
+        </div>
+      <br><br>
+        <div id="tv">
+          <a target = "_blank" href="{% static 'pdf/NewsletterSeptembre2022.pdf' %}">
+            <img border="2" class="imgMois" src = "{% static 'images/NLS2022.png' %}"/><br>
+          </a>
+        </div>
+    </th>
+  </tr>
                 
-
-
-{% comment %} Case 3 {% endcomment %}  
-            <tr >
-              <th class="newsletter">
-                <h3>La catastrophe naturelle incendie</h3> 
-                <h4 >Mois Année</h4>
-                <center>
-                <div class="download-btn btn-1">
-                  <div class="top">
-                    <i class="fa fa-cloud-download">Télécharger</i> 
-                  </div>
-{% comment %} Bouton de téléchargement {% endcomment %}
-                  <a href="pdf/NewsletterSeptembre2022.pdf" download="Newsletter_Mois_Annee.pdf">
-                  <div class="bottom">
-                     Mois Année
-                  </div>
-                </div>
-                  </a>
-                  <br><br>
-                  <div id="tv">
-                  <a target = "_blank" href="{% static 'pdf/NewsletterSeptembre2022.pdf' %}"><img border="2" class="imgMois" src = "{% static 'images/NLS2022.png' %}"/><br>
-                  </div>
-                  </th>
-               
-{% comment %} Case 4 {% endcomment %}   
-              <th class="newsletter">
-                <h3 >Titre</h3> 
-                <h4>Mois Année</h4>
-                <center>
-                <div class="download-btn btn-1">
-                  <div class="top">
-                    <i class="fa fa-cloud-download">Télécharger</i> 
-                  </div>
-                  <a href="pdf/NewsletterSeptembre2022.pdf" download="Newsletter_Mois_Annee.pdf">
-                  <div class="bottom">
-                    Mois Année
-                  </div>
-                </div>
-                  </a>
-                  <br><br>
-                  <div id="tv">
-                  <a target = "_blank" href="{% static 'pdf/NewsletterSeptembre2022.pdf' %}"><img border="2" class="imgMois" src = "{% static 'images/NLS2022.png' %}"/><br>
-                  </div>
-              </th>
-            </tr>
-        </table>
-
-
-
-
-{% comment %} </form> {% endcomment %}
+</table>
 {% endblock %}
 
 

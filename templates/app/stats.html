@@ -2,7 +2,7 @@
 {% block content %}
 {% load static %}
 
-{% comment %} Déclaration des feuilles de style {% endcomment %}
+{% comment %} * Déclaration des feuilles de style * {% endcomment %}
 <link rel = "stylesheet" type="text/css" href="{% static 'css/style.css' %}"/>
 <link rel = "stylesheet" type="text/css" href="{% static 'css/boutonCadre.css' %}"/>
 <link rel = "stylesheet" type="text/css" href="{% static 'css/download.css' %}"/>
@@ -11,10 +11,10 @@
 <link rel = "stylesheet" type="text/css" href="{% static 'css/graph.css' %}"/>
 <link rel = "stylesheet" type="text/css" href="{% static 'css/titre.css' %}"/>
 
-{% comment %} Déclaration JS {% endcomment %}
+{% comment %} * Déclaration JS * {% endcomment %}
 <script src="{% static 'js/stat.js' %}"></script>
 
-{% comment %} Bouton Accueil {% endcomment %}
+{% comment %} * Bouton Accueil * {% endcomment %}
 <section align="left" class="portfolio-experiment">
   <a href="/accueil">
     <span class="text">Accueil</span>
@@ -25,157 +25,183 @@
   </a>
 </section>
 
+{% comment %} * Searchbar * {% endcomment %}
 <section align="right" >
   <input  id="searchbar" onkeyup="search_stat()" type="text" name="search" placeholder="Rechercher Statistiques">
 </section> <br>
 
-{% comment %} Page des stats {% endcomment %}
-{% comment %} <form method="post" action="/stats" > {% endcomment %}
-  <center>
-    <div class="container">
-      <p>
-        <span>
-          Statistiques
-        </span>
-      </p>
-    </div>
-    <h4><i>(Cliquez sur un graphique pour consulter vos statistiques)</i><h4>
-  </center>   
-        <table cellpadding="15" align="center" >
-
-{% comment %} Case 1 {% endcomment %}
-            <tr>
-                <th class="stat">
-                  <h3>Relevé d'Août 2022<h3>
-                  <center>
-{% comment %} Bouton de téléchargement {% endcomment %}
-                  <div class="download-btn btn-1">
-                    <div class="top">
-                      <i class="fa fa-cloud-download">Télécharger</i> 
-                    </div>
-                    <a href="{% static 'pdf/GRAout2022.pdf' %}" download="Stats_Aout_2022.pdf">
-                    <div class="bottom">
-                      Août 2022
-                    </div>
-                  </div>
-                    </a>
-                    <br><br>
-                    <a target = "_blank" href="{% static 'pdf/GRAout2022.pdf' %}">
-                      <div class="container">
-                        <div class="donut-chart-block block"> 
-                              <div class="donut-chart">
-                                  <div id="part1Aout" class="portion-block"><div class="circle"></div></div>
-                                  <div id="part2Aout" class="portion-block"><div class="circle"></div></div>
-                                  <div id="part3Aout" class="portion-block"><div class="circle"></div></div>
-                                  <p class="center">
-                                    Août <br> 2022
-                                  </p>        
-                              </div>
-                         </div>
-                      </div>
-                    </a>  
-                </th>
-
-{% comment %} Case 2 {% endcomment %}    
-              <th class="stat">
-                <h3>Relevé Septembre 2022<h3>
-                <center>
-{% comment %} Bouton de téléchargement {% endcomment %}
-                <div class="download-btn btn-1">
-                  <div class="top">
-                     <i class="fa fa-cloud-download">Télécharger</i> 
-                  </div>
-                  <a href="{% static 'pdf/GRSeptembre2022.pdf' %}" download="Stats_Septembre_2022.pdf">
-                  <div class="bottom">
-                  Septembre 2022
-                  </div>
-                </div>
-                  </a>
-                  <br><br>
-                  <a target = "_blank" href="{% static 'pdf/GRSeptembre2022.pdf' %}">
-                    <div class="container">
-                      <div class="donut-chart-block block"> 
-                            <div class="donut-chart">
-                                <div id="part1Sep" class="portion-block"><div class="circle"></div></div>
-                                <div id="part2Sep" class="portion-block"><div class="circle"></div></div>
-                                <div id="part3Sep" class="portion-block"><div class="circle"></div></div>
-                                <p class="center">
-                                  Septembre <br> 2022
-                                </p>        
-                            </div>
-                       </div>
-                    </div>
-                  </a>
-              </th>
-            </tr>
-
-{% comment %} Case 3 {% endcomment %}  
-            <tr>
-              <th class="stat">
-                <h3>Titre<h3>
-                <center>
-{% comment %} Bouton de téléchargement {% endcomment %}
-                <div class="download-btn btn-1">
-                  <div class="top">
-                     <i class="fa fa-cloud-download">Télécharger</i> 
-                  </div>
-                  <a href="{% static 'pdf/GRSeptembre2022.pdf' %}" download="Stats_Septembre_2022.pdf">
-                  <div class="bottom">
-                  Mois Annee
-                  </div>
-                </div>
-                  </a>
-                  <br><br>
-                  <a target = "_blank" href="{% static 'pdf/GRSeptembre2022.pdf' %}">
-                    <div class="container">
-                      <div class="donut-chart-block block"> 
-                            <div class="donut-chart">
-                                <div id="partB1" class="portion-block"><div class="circle"></div></div>
-                                <div id="partB2" class="portion-block"><div class="circle"></div></div>
-                                <div id="partB3" class="portion-block"><div class="circle"></div></div>
-                                <p class="center">
-                                  Mois <br> annee
-                                </p>        
-                            </div>
-                       </div>
-                    </div>
-                  </a>
-              </th>
-  
-
-
-{% comment %} Case 4 {% endcomment %}    
-<th class="stat">
-  <h3>Titre<h3>
-  <center>
-{% comment %} Bouton de téléchargement {% endcomment %}
-  <div class="download-btn btn-1">
-    <div class="top">
-       <i class="fa fa-cloud-download">Télécharger</i> 
-    </div>
-    <a href="{% static 'pdf/GRSeptembre2022.pdf' %}" download="Stats_Septembre_2022.pdf">
-    <div class="bottom">
-    Mois annee
-    </div>
+{% comment %} * Titre des stats * {% endcomment %}
+<center>
+  <div class="container">
+    <p>
+      <span>
+        Statistiques
+      </span>
+    </p>
   </div>
-    </a>
-    <br><br>
-    <a target = "_blank" href="{% static 'pdf/GRSeptembre2022.pdf' %}">
-      <div class="container">
-        <div class="donut-chart-block block"> 
-              <div class="donut-chart">
-                  <div id="partB1" class="portion-block"><div class="circle"></div></div>
-                  <div id="partB2" class="portion-block"><div class="circle"></div></div>
-                  <div id="partB3" class="portion-block"><div class="circle"></div></div>
-                  <p class="center">
-                    Mois <br> annee
-                  </p>        
-              </div>
-         </div>
+  <h4><i>(Cliquez sur un graphique pour consulter vos statistiques)</i><h4>
+</center>  
+
+{% comment %} * Tableau de Newsletters * {% endcomment %}
+{% comment %} ! Les CASES fonctionne par paire ! {% endcomment %}
+
+<table cellpadding="15" align="center" >
+
+{% comment %} * Case 1 * {% endcomment %}
+  <tr>
+    <th class="stat">
+    <h3>Relevé d'Août 2022<h3>
+    <center>
+      <div class="download-btn btn-1">
+        <div class="top">
+          <i class="fa fa-cloud-download">Télécharger</i> 
+        </div>
+        <a href="{% static 'pdf/GRAout2022.pdf' %}" download="Stats_Aout_2022.pdf">
+          <div class="bottom">
+            Août 2022
+          </div>
+        </a>
       </div>
-    </a>
-</th>
-</tr>
+      <br><br>
+      <a target = "_blank" href="{% static 'pdf/GRAout2022.pdf' %}">
+        <div class="container">
+          <div class="donut-chart-block block"> 
+            <div class="donut-chart">
+              <div id="part1Aout" class="portion-block">
+                <div class="circle"></div>
+              </div>
+              <div id="part2Aout" class="portion-block">
+                <div class="circle"></div>
+              </div>
+              <div id="part3Aout" class="portion-block">
+                <div class="circle"></div>
+              </div>
+              <p class="center">
+                Août <br> 2022
+              </p>        
+            </div>
+          </div>
+        </div>
+      </a>  
+    </center>
+  </th>
+
+{% comment %} * Case 2 * {% endcomment %}    
+    <th class="stat">
+      <h3>Relevé Septembre 2022<h3>
+      <center>
+        <div class="download-btn btn-1">
+          <div class="top">
+            <i class="fa fa-cloud-download">Télécharger</i> 
+          </div>
+          <a href="{% static 'pdf/GRSeptembre2022.pdf' %}" download="Stats_Septembre_2022.pdf">
+            <div class="bottom">
+              Septembre 2022
+            </div>
+          </a>
+        </div>
+        <br><br>
+        <a target = "_blank" href="{% static 'pdf/GRSeptembre2022.pdf' %}">
+          <div class="container">
+            <div class="donut-chart-block block"> 
+              <div class="donut-chart">
+                <div id="part1Sep" class="portion-block">
+                  <div class="circle"></div>
+                </div>
+                <div id="part2Sep" class="portion-block">
+                  <div class="circle"></div>
+                </div>
+                <div id="part3Sep" class="portion-block">
+                  <div class="circle"></div>
+                </div>
+                <p class="center">
+                  Septembre <br> 2022
+                </p>        
+              </div>
+            </div>
+          </div>
+        </a>
+      </center>
+    </th>
+  </tr>
+
+{% comment %} * Case 3 * {% endcomment %}  
+  <tr>
+    <th class="stat">
+      <h3>Titre<h3>
+      <center>
+        <div class="download-btn btn-1">
+          <div class="top">
+            <i class="fa fa-cloud-download">Télécharger</i> 
+          </div>
+          <a href="{% static 'pdf/GRSeptembre2022.pdf' %}" download="Stats_Septembre_2022.pdf">
+            <div class="bottom">
+              Mois Annee
+            </div>
+          </a>
+        </div>
+        <br><br>
+        <a target = "_blank" href="{% static 'pdf/GRSeptembre2022.pdf' %}">
+          <div class="container">
+            <div class="donut-chart-block block"> 
+              <div class="donut-chart">
+                <div id="partB1" class="portion-block">
+                  <div class="circle"></div>
+                </div>
+                <div id="partB2" class="portion-block">
+                  <div class="circle"></div>
+                </div>
+                <div id="partB3" class="portion-block">
+                  <div class="circle"></div>
+                </div>
+                <p class="center">
+                  Mois <br> annee
+                </p>        
+              </div>
+            </div>
+          </div>
+        </a>
+      </center>
+    </th>
+  
+{% comment %} * Case 4 * {% endcomment %}    
+    <th class="stat">
+      <h3>Titre<h3>
+      <center>
+        <div class="download-btn btn-1">
+          <div class="top">
+            <i class="fa fa-cloud-download">Télécharger</i> 
+          </div>
+          <a href="{% static 'pdf/GRSeptembre2022.pdf' %}" download="Stats_Septembre_2022.pdf">
+            <div class="bottom">
+            Mois annee
+            </div>
+          </a>
+        </div>
+        <br><br>
+        <a target = "_blank" href="{% static 'pdf/GRSeptembre2022.pdf' %}">
+          <div class="container">
+            <div class="donut-chart-block block"> 
+              <div class="donut-chart">
+                <div id="partB1" class="portion-block">
+                  <div class="circle"></div>
+                </div>
+                <div id="partB2" class="portion-block">
+                  <div class="circle"></div>
+                </div>
+                <div id="partB3" class="portion-block">
+                  <div class="circle"></div>
+                </div>
+                <p class="center">
+                  Mois <br> annee
+                </p>        
+              </div>
+            </div>
+          </div>
+        </a>
+      </center>
+    </th>
+  </tr>
 
 </table>
 {% endblock %}

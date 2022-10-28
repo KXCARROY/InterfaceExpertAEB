@@ -11,6 +11,8 @@ Télécharger Django
 
 python -m pip install Django
 
+Aller dans le dossier du project 
+
 Puis pour lancer le serveur virtuel 
 
 python manage.py runserver
